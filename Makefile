@@ -9,4 +9,4 @@ PWD=
 upload:
 	curl $(O) -T -u $(USER):$(PWD) ftp://$(IP)/workspace/dataset/$(O_DIR)
 download:
-	wget --ftp-user=$(USER) --ftp-password=$(PWD) ftp://$(IP)/workspace/dataset/$(D_DIR)
+	wget -r --ftp-user=$(USER) --ftp-password=$(PWD) ftp://$(IP)/workspace/dataset/$(D_DIR)
